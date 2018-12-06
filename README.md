@@ -1,16 +1,18 @@
-# developers
+# Flutter Developers
 
-A new Flutter project.
+Flutter Developers may add themselves to this app for the purpose of showcasing their work.
 
-## Getting Started
+Please direct all questions to @lukepigehtti on the [Flutter Discord](https://discord.gg/bdseQm2)
 
-This project is a starting point for a Flutter application.
+## How to add yourself
 
-A few resources to get you started if this is your first Flutter project:
+1. Create your assets folder in `assets/developers/your_name`, then add your avatar image.
+2. Add your assets folder to `pubspec.yaml`
+3. Create a page in `lib/developers/your_name` called `YourNamePage`
+4. Add a card to `lib/main.dart` that includes your name, business, avatar, and your page
+5. Make a pull request
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+## Notes
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+1. Please add dependencies sparingly!
+2. Feel free to go wild on your page, but keep the content G rated.
