@@ -1,3 +1,4 @@
+import 'package:developers/developers/groovin_chip/groovin_chip.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -65,4 +66,11 @@ final developerCards = <Widget>[
     image: AssetImage("assets/developers/luke_pighetti/avatar.jpg"),
     page: LukePighettiPage(),
   ),
+  DeveloperCard(
+    name: "GroovinChip",
+    business: "Groovin Apps",
+    image: AssetImage("assets/developers/groovin_chip/groovin_chip_avatar.png"),
+    page: GroovinChipPage(),
+  ),
+
 ];
