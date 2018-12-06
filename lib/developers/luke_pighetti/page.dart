@@ -13,7 +13,14 @@ class _LukePighettiPageState extends State<LukePighettiPage> {
         title: Text("Luke Pighetti"),
       ),
       body: Center(
-        child: Text("text"),
+        child: Hero(
+          tag: "Luke Pighetti",
+          child: CircleAvatar(
+            radius: 90,
+            backgroundImage:
+                AssetImage("assets/developers/luke_pighetti/avatar.jpg"),
+          ),
+        ),
       ),
     );
   }

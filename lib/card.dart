@@ -31,9 +31,12 @@ class DeveloperCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    CircleAvatar(
-                      radius: constraints.minWidth / 2 - 42,
-                      backgroundImage: this.image,
+                    Hero(
+                      tag: this.name,
+                      child: CircleAvatar(
+                        radius: constraints.minWidth / 2 - 42,
+                        backgroundImage: this.image,
+                      ),
                     ),
                     SizedBox(height: 8),
                     Text(
