@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import './card.dart' show DeveloperCard;
 
+import './developers/luke_pighetti/page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -49,5 +51,6 @@ final developerCards = <Widget>[
     name: "Luke Pighetti",
     business: "Pighetti Design",
     image: AssetImage("assets/developers/luke_pighetti/avatar.jpg"),
+    page: LukePighettiPage(),
   ),
 ];
