@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
   }
@@ -72,5 +73,4 @@ final developerCards = <Widget>[
     image: AssetImage("assets/developers/groovin_chip/groovin_chip_avatar.png"),
     page: GroovinChipPage(),
   ),
-
 ];
