@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-/// TODO: add your card here
+/// TODO: add your card to the end of this list
 final developerCards = <Widget>[
   DeveloperCard(
     name: "Luke Pighetti",
