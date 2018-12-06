@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import './card.dart' show DeveloperCard;
 
 import './developers/luke_pighetti/page.dart';
@@ -31,9 +33,19 @@ class _MyHomePageState extends State<MyHomePage> {
     final isLandscape =
         MediaQuery.of(context).orientation == Orientation.landscape;
 
+    launchGithub() {
+      launch("https://github.com/lukepighetti/flutter-developers");
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Flutter Developers"),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () => launchGithub(),
+          )
+        ],
       ),
       body: Center(
         child: GridView.count(

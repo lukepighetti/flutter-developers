@@ -22,6 +22,7 @@ dependencies:
 
   # NOTE: PLEASE KEEP DEPENDENCIES TO AN ABSOLUTE MINIMUM
   flutter_webview_plugin: ^0.3.0+2
+  url_launcher: ^4.0.2
 
 dev_dependencies:
   flutter_test:
