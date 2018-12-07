@@ -1,16 +1,20 @@
-import 'package:developers/developers/groovin_chip/groovin_chip.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 import './card.dart' show DeveloperCard;
 
 import './developers/luke_pighetti/page.dart';
+import './developers/groovin_chip/groovin_chip.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
+
     return MaterialApp(
       title: 'Flutter Developers',
       theme: ThemeData(

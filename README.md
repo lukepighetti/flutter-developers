@@ -24,6 +24,6 @@ Please direct all questions to @lukepighetti on the [Flutter Discord](https://di
 
 <div align="left">
     <img src="/docs/homepage.jpg" width="290px"</img> 
-    <img src="/docs/devpage1.jpg" width="290px"</img>
+    <img src="/docs/luke_pighetti.jpg" width="290px"</img>
     <img src="/docs/devpage2.jpg" width="290px"</img> 
 </div>
