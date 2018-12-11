@@ -4,6 +4,20 @@ Flutter Developers may add themselves to this app for the purpose of showcasing 
 
 Please direct all questions to @lukepighetti on the [Flutter Discord](https://discord.gg/bdseQm2)
 
+## Download
+
+We're live on Google Play. Pipeline provided by Codemagic.
+
+<div align="left">
+    <a href="https://play.google.com/store/apps/details?id=com.fluttercommunity.developers">
+      <img src="/docs/google-play.png" width="200px">
+    </a>
+    &nbsp;
+    <a href="https://codemagic.io">
+      <img src="/docs/codemagic.png" width="200px">
+    </a>
+</div>
+
 ## How to add yourself
 
 1. Create your assets folder in `assets/developers/your_name`, then add your avatar image.
@@ -23,7 +37,7 @@ Please direct all questions to @lukepighetti on the [Flutter Discord](https://di
 ## Screenshots
 
 <div align="left">
-    <img src="/docs/homepage.jpg" width="290px"</img> 
-    <img src="/docs/luke_pighetti.gif" width="290px"</img>
-    <img src="/docs/devpage2.jpg" width="290px"</img> 
+    <img src="/docs/homepage.jpg" width="290px"/> 
+    <img src="/docs/luke_pighetti.gif" width="290px"/>
+    <img src="/docs/devpage2.jpg" width="290px"/>
 </div>
