@@ -23,41 +23,48 @@ class DeveloperCard extends StatelessWidget {
     }
 
     return LayoutBuilder(
-      builder: (context, constraints) => Card(
-            child: GestureDetector(
-              onTap: () => navigate(),
-              child: Container(
-                padding: EdgeInsets.all(12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Hero(
-                      tag: this.name,
-                      child: CircleAvatar(
-                        radius: constraints.minWidth / 2 - 42,
-                        backgroundImage: this.image,
+      builder: (context, constraints) {
+        final diameter = constraints.minWidth - 84;
+
+        return Card(
+          child: GestureDetector(
+            onTap: () => navigate(),
+            child: Container(
+              padding: EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Hero(
+                    tag: this.name,
+                    child: ClipOval(
+                      child: Image(
+                        height: diameter,
+                        width: diameter,
+                        image: this.image,
                       ),
                     ),
-                    SizedBox(height: 8),
-                    Text(
-                      this.name,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    this.name,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                     ),
-                    Text(
-                      this.business,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    )
-                  ],
-                ),
+                  ),
+                  Text(
+                    this.business,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  )
+                ],
               ),
             ),
           ),
+        );
+      },
     );
   }
 }
