@@ -86,14 +86,37 @@ class _GroovinChipPageState extends State<GroovinChipPage> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              IconButton(
-                                icon: Icon(
-                                  GroovinMaterialIcons.google_play,
-                                  color: Colors.green,
-                                ),
-                                tooltip: "Install from Google Play",
-                                onPressed: () {
-                                  launch("https://play.google.com/store/apps/details?id=com.groovinchip.flutter.callmanager");
+                              Theme.of(context).platform == TargetPlatform.android ?
+                                IconButton(
+                                  icon: Icon(
+                                    GroovinMaterialIcons.google_play,
+                                    color: Colors.green,
+                                  ),
+                                  tooltip: "Install from Google Play",
+                                  onPressed: () {
+                                    launch("https://play.google.com/store/apps/details?id=com.groovinchip.flutter.callmanager");
+                                  },
+                                )
+                              : Builder(
+                                builder: (BuildContext context) {
+                                  return IconButton(
+                                    icon: Icon(GroovinMaterialIcons.apple),
+                                    onPressed: () {
+                                      Scaffold.of(context).showSnackBar(SnackBar(
+                                        content: Row(
+                                          children: <Widget>[
+                                            Icon(Icons.info_outline),
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 10.0),
+                                              child: Text("Not avaialble on iOS yet"),
+                                            ),
+                                          ],
+                                        ),
+                                        duration: Duration(seconds: 2),
+                                      )
+                                      );
+                                    },
+                                  );
                                 },
                               ),
                               IconButton(
