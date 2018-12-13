@@ -48,16 +48,24 @@ android {
 
     signingConfigs {
         release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
         }
     }
     
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+                println "Signing with key.properties"
+            } else {
+                signingConfig signingConfigs.debug
+                println "Signing with debug keys"
+            }
         }
     }
 }
