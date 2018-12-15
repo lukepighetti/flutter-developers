@@ -6,7 +6,7 @@ Please direct all questions to @lukepighetti on the [Flutter Discord](https://di
 
 ## Download
 
-We're live on Google Play. Pipeline provided by Codemagic.
+We're live on both app stores. Pipeline provided by Codemagic.
 
 <div align="left">
     <a href="https://itunes.apple.com/us/app/flutter-developers/id1446351924">
