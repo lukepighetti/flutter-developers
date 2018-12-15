@@ -9,8 +9,12 @@ Please direct all questions to @lukepighetti on the [Flutter Discord](https://di
 We're live on Google Play. Pipeline provided by Codemagic.
 
 <div align="left">
+    <a href="https://itunes.apple.com/us/app/flutter-developers/id1446351924">
+      <img src="/docs/app-store-badge.png" height="60px">
+    </a>
+    &nbsp;
     <a href="https://play.google.com/store/apps/details?id=com.fluttercommunity.developers">
-      <img src="/docs/google-play.png" width="200px">
+      <img src="/docs/google-play-badge.png" width="200px">
     </a>
     &nbsp;
     <a href="https://codemagic.io">
