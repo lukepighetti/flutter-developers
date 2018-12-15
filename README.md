@@ -33,10 +33,11 @@ We're live on Google Play. Pipeline provided by Codemagic.
 
 ## Notes
 
-1. I will almost certainly accept your PR if your content is G rated and stays within your page.
-2. You are solely responsible for your developer folder and assets folder.
-3. I encourage you to use your page as a showcase / elevator pitch.
-4. If a PR is stuck feel free to tag me here or on Discord.
+1. Google Play links/icons/mentions are not allowed on iOS AppStore. Make them platform specific. [example](https://github.com/lukepighetti/flutter-developers/blob/master/lib/developers/groovin_chip/groovin_chip.dart#L89-L119)
+2. I will almost certainly accept your PR if your content is G rated and stays within your page.
+3. You are solely responsible for your developer folder and assets folder.
+4. I encourage you to use your page as a showcase / elevator pitch.
+5. If a PR is stuck feel free to tag me here or on Discord.
 
 ## Screenshots
 
