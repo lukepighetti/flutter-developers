@@ -343,9 +343,11 @@ class _GroovinChipPageState extends State<GroovinChipPage> {
                           padding: const EdgeInsets.only(top: 16.0, left: 12.0, right: 12.0),
                           child: Row(
                             children: <Widget>[
-                              Text(
-                                "This package includes custom widgets built by me.",
-                              ),
+                              Flexible(
+                                child: Text(
+                                  "This package includes custom widgets built by me.",
+                                ),
+                              )
                             ],
                           ),
                         ),
