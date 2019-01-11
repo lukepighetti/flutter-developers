@@ -1,4 +1,5 @@
 import 'package:developers/developers/groovin_chip/groovin_chip.dart';
+import 'package:developers/developers/darshan_kawar/darshan_kawar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -78,4 +79,10 @@ final developerCards = <Widget>[
     image: AssetImage("assets/developers/groovin_chip/groovin_chip_avatar.png"),
     page: GroovinChipPage(),
   ),
+  DeveloperCard(
+    name: "DarshanK",
+    business: "Flutter Dev",
+    image: AssetImage('assets/developers/darshan_kawar/avatar.png'),
+    page: DarshanKPage(),
+  )
 ];
