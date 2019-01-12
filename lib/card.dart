@@ -38,6 +38,7 @@ class DeveloperCard extends StatelessWidget {
                     tag: this.name,
                     child: ClipOval(
                       child: Image(
+                        fit: BoxFit.cover,
                         height: diameter,
                         width: diameter,
                         image: this.image,

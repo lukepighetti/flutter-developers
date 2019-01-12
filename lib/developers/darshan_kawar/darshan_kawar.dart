@@ -298,13 +298,13 @@ class _DarshanKPageState extends State<DarshanKPage> {
                 child: GestureDetector(
                   onTap: () {
                     launch(
-                        "https://play.google.com/store/apps/details?id=com.darshan.tourguide&hl=en");
+                        "https://github.com/DK15/tour-guide-flutter");
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        GroovinMaterialIcons.google_play,
+                        GroovinMaterialIcons.github_circle,
                         color: Colors.black,
                       )
                     ],
@@ -344,7 +344,7 @@ class _DarshanKPageState extends State<DarshanKPage> {
                   ),
                   Flexible(
                     child: new Text(
-                      'app to show realtime cricket top and recent news.',
+                      'App to show realtime cricket top and recent news.',
                       style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: 'Roboto',
